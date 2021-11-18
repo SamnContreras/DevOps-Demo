@@ -15,8 +15,10 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 const app = express();
+app.use(express.json());
+app.use(cors());
 
-const sutdents = ["Sam"]
+const sutdents = ["Sam"];
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
