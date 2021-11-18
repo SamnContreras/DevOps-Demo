@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const students = ["Jeddy"];
+const students = ["Sam"];
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
