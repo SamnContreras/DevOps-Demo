@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
     rollbar.info("HTML file served successfully");
 });
 
-app.get("/api./students", (req, res) => {
+app.get("/api/students", (req, res) => {
     rollbar.info("Someone got the list of students on page load");
     res.status(200).send(sutdents)
 });
